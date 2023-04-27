@@ -1,0 +1,31 @@
+.menu {
+    &-link {
+
+      margin: 0 1rem;
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+  
+      &--selected {
+        text-decoration: underline;
+      }
+  
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+  .nav{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top:0;
+    left:0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+    text-transform: uppercase;
+  }
