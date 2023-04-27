@@ -1,10 +1,11 @@
-import NavBar from "../NavBar/NavBar";
-import categoriesData from '../../data/categorie';
+import Friends from "../Friends/Friends";
+import Description from "../Description/Description";
 
 export default function Home(){
     return(
         <header>
-           <NavBar categories={categoriesData} />
+           <Description />
+           <Friends />
         </header>
     );
 }

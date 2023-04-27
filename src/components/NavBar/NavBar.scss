@@ -1,8 +1,8 @@
 .menu {
-  margin-top: 3rem;
   text-align: center;
+  min-height: 80vh;
     &-link {
-      margin-left: 1rem;
+      margin-left: 1.2rem;
       padding-bottom: 2.2rem;
       cursor: pointer;
       color: black;
@@ -20,7 +20,7 @@
   }
   .nav{
     display: flex;
-    position: fixed;
+    position: sticky;
     justify-content: center;
     background-color: white;
     width: 100%;
