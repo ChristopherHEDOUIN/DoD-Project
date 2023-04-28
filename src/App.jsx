@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import categoriesData from './data/categorie';
 import Footer from './components/Footer/Footer';
+import ScrollButton from './components/ScrollButton/ScrollButton';
 
 function App() {
 
@@ -23,8 +24,9 @@ function App() {
             path='/blog'
             element={<Blog />}>
           </Route>
+
         </Routes>
-        
+      <ScrollButton />
       <Footer />
     </div>
   )

@@ -21,6 +21,7 @@ export default function NavBar({ categories }){
                 }
             </nav>
             <img className='menu__logo' src={logo} alt="Logo__Guilde__DeathOrDie" width='300' height='300' />
+
         </header>
         );
 }
