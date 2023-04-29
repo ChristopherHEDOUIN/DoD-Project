@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar({ categories }){
 
-    const [active, IsActive] = useState(true);
+    const [active, IsActive] = useState(false);
     const handleNavClick = () =>{
         IsActive(false);
     }
