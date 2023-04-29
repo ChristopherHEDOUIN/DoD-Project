@@ -1,11 +1,17 @@
 import './NavBar.scss'
+import { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import logo from '../../assets/Death-removebg-preview.jpg'
 
 export default function NavBar({ categories }){
+
+    const [active, IsActive] = useState(true);
+    const handleNavClick = () =>{
+        IsActive(false);
+    }
+
     return(
         <header className="menu">
-            <nav className='nav'>
+            <nav className={`nav-items ${active && "switch"}`}>
                 {
                     categories.map((category) => (
                         <NavLink
@@ -14,14 +20,19 @@ export default function NavBar({ categories }){
                             className={({ isActive }) => (
                                 isActive ? 'menu-link menu-link--selected' : 'menu-link'
                             )}
+                            onClick={handleNavClick}
                             >
                             {category.label}
                         </NavLink>
                     ))
-                }
+                }  
             </nav>
-            <img className='menu__logo' src={logo} alt="Logo__Guilde__DeathOrDie" width='300' height='300' />
-
+            <div 
+                className={`nav-toggle ${active && "switch"}`}
+                onClick={() => IsActive(!active)}>
+                        
+                <div className='hamburger'></div>
+            </div>
         </header>
         );
 }

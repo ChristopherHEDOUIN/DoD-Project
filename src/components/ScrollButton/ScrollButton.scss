@@ -1,12 +1,12 @@
 .btn-scrollTop{
-    position: fixed;
-    bottom: 40px;
-    font-size: 3rem;
+    position: sticky;
+    bottom: 50px;
+    font-size: 2rem;
     cursor: pointer;
-    right: 2%;
+    left: 2%;
     color: orange;
     background: black;
-    border-radius: 100px;
+    border-radius: 24px;
     padding: 0px;
     border: none;
     opacity: 0.9;

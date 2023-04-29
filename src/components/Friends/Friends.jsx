@@ -8,7 +8,7 @@ export default function Friends(){
         <article className='article'>
                 <h2 className='article__mesPotesGeeks'>Mes Geeks</h2>
                     <ul className='article__ul'>
-                        <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 2, sm: 8, md: 10}}>
+                        <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 2, sm: 8, md: 10}} sx={{zIndex:1}}>
                             <li className='article__li'>
                                 <Avatar src="../../../public/Ouf.jpeg" alt="imgjeuxpersonnage" sx={{ width:150, height:150, }} />
                                 <Link className='article__a'href="#">
