@@ -1,33 +1,40 @@
 .menu {
-  width: 100%;
+  position: sticky;
+  top:0;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: rgb(43, 43, 43);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 0.2rem;
+  border-radius: 1rem;
   height: 4rem;
-  background-color: white;
 
     &-link {
       margin-left: 1.2rem;
       padding: 1rem;
       cursor: pointer;
-      color: black;
+      color: #FFDE59;
       position: relative;
       font-size: 1.5rem;
       text-transform: uppercase;
       text-decoration: none;
   
       &--selected {
-        border-bottom: 0.2rem solid orange;
+        border-radius: 1rem;
+        border-bottom: 0.2rem solid #FFDE59;
       }
       &:hover {
-        border-radius: 2rem;
-        background-color: rgba(131, 122, 122, 0.1);
-        border-bottom: 0.2rem solid orange;
+        border-radius: 3rem;
+        border: 0.2rem solid #FFDE59;
         transition: all 0.25s;
       }
     }
   }
+  .menu-big{
+    width: 100%;
+  }
+
   .nav-toggle{
     display: none;
   }
@@ -36,6 +43,7 @@
 
     .menu{
       justify-content: flex-end;
+      border-radius: 1rem 1rem 0 0;
 
       &-link{
         display: flex;
@@ -55,12 +63,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      border-radius: 0 0 1rem 1rem;
       background: white;
       transform: translateX(-100%);
       transition: all .45s;
 
       &.switch {
         transform: translateX(0);
+        background: rgb(43, 43, 43);
     }
     }
 
@@ -77,7 +87,7 @@
       top: 0;
       width: 32px;
       height: 2px;
-      background: orange;
+      background: #FFDE59;
       transition: all 0.45s ease-in-out;
     }
     .hamburger::before,
@@ -85,7 +95,7 @@
       content: "";
       position: absolute;
       height: 2px;
-      background: black;
+      background: #FFDE59;
       border-radius: 2px;
       transition: all 0.45s ease-in-out;
     }

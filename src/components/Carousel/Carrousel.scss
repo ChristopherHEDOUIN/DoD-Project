@@ -1,29 +1,16 @@
-.slideshow {
-    z-index: -1;
-    margin-top: 3rem;
-}
-
-.slideshowSlider {
-    white-space: nowrap;
-    transition: ease-out 1500ms;
-}
-
-.slide {
-    display: inline-block;
-    height: 20rem;
-    width: 100%;
-}
-
-.slideshowDots {
+.slideshow{
     text-align: center;
-  }
-  .slideshowDot {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 15px 7px 0px;
-    background-color: #c4c4c4;
-  }
+    z-index: -1;
+}
+.slide{
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
+@media (max-width: 700px) {
+    .slide{
+        height: 250px;
+    }
+
+}

@@ -1,24 +1,27 @@
+import React from "react";
 import './Footer.scss'
-import { Link } from 'react-router-dom';
 
-
-export default function Footer(){
-
-    return(
-        <footer className='footer'>
-            <ul>
-                <li>
-                    <Link 
-                        to="/"
-                        className='footer__link'
-                        onClick={() =>{
-                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-                        }}
-                    >
-                        DoD
-                    </Link>
-                </li>
-            </ul>
-        </footer>
-    );
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <ul className="footer_ul">
+        <li className="footer_li bold">Home</li>
+        <li>
+          <ul>
+            <li className="footer_li bold">Social Media</li>
+            <li className="footer_li">Instagram</li>
+            <li className="footer_li">Linkedin</li>
+          </ul>
+        </li>
+        <li className="footer_li">
+          <ul>
+            <li className="footer_li bold">Contact</li>
+            <li className="footer_li">Sur le net</li>
+            <li className="footer_li">chris.hedouin@lilo.org</li>
+          </ul>
+        </li>
+      </ul>
+      <span> &copy; 2023 DeathOrDieCompagny. </span>
+    </footer>
+  );
 }

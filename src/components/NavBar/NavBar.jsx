@@ -1,16 +1,16 @@
 import './NavBar.scss'
-import { useState } from 'react';
+import {useState} from 'react';
 import { NavLink } from "react-router-dom";
 
 export default function NavBar({ categories }){
 
-    const [active, IsActive] = useState(false);
+    const [active, IsActive] = useState(false)
     const handleNavClick = () =>{
-        IsActive(false);
+        IsActive(false)
     }
 
     return(
-        <header className="menu">
+        <header className='menu'>
             <nav className={`nav-items ${active && "switch"}`}>
                 {
                     categories.map((category) => (
@@ -35,4 +35,5 @@ export default function NavBar({ categories }){
             </div>
         </header>
         );
+
 }
