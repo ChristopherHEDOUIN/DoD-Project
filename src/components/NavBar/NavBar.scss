@@ -1,6 +1,7 @@
 .menu {
   position: sticky;
   top:0;
+  z-index: 1;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   background-color: rgb(43, 43, 43);
@@ -43,7 +44,7 @@
 
     .menu{
       justify-content: flex-end;
-      border-radius: 1rem 1rem 0 0;
+      border-radius: 0;
 
       &-link{
         display: flex;

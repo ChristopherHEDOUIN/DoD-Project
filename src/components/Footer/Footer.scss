@@ -7,7 +7,7 @@
 }
 .footer_ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style: none;
 }
 .footer_li{
@@ -15,4 +15,9 @@
 }
 .bold{
     font-weight: bold;
+}
+.compagny{
+    text-align:start;
+    margin: 0;
+    padding: 0;
 }

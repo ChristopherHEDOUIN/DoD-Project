@@ -1,35 +1,29 @@
 .article {
-    min-height: 50vh;
     position: relative;
     z-index: -1;
     padding: 3rem 0 3rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    margin: 0 auto;
 }
 .article__mesPotesGeeks{
     text-align: center;
 }
-.article__ul{
-    list-style: none;
-    margin: 5rem auto 0 auto;
-}
-.article__li{
+.article_avatar{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-self: center;
 }
-.article__a{
-    margin-left: 3rem;
-    text-decoration: none;
-    padding-bottom: 2.2rem;
-    cursor: pointer;
-    color: black;
-    font-size: 1.2rem;
-    text-decoration: none;
-    &:hover {
-        color: orange;
-        border-bottom: 0.2rem solid orange;
+.avatar{
+    margin-right: 1rem;
+}
+
+@media (min-width: 1100px) {
+    .article_avatar{
+        display: flex;
+        flex-direction: row;
+    }
+    .avatar{
+        margin-bottom: 1rem;
     }
 }

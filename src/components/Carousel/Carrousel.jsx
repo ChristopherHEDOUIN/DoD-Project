@@ -9,7 +9,7 @@ import wow3 from '../../assets/image 3.jpg'
 export default function Carrousel(){
     return(
         <div className="slideshow"> 
-            <AliceCarousel infinite disableButtonsControls autoPlay autoPlayInterval={3000}>
+            <AliceCarousel infinite disableButtonsControls autoPlay autoPlayInterval={2000}>
                 <img src={wow1} className='slide' alt='world of warcraft' />
                 <img src={wow2} className='slide' alt='world of warcraft' />
                 <img src={wow3} className='slide' alt='world of warcraft' />

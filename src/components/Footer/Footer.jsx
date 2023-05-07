@@ -21,7 +21,7 @@ export default function Footer() {
           </ul>
         </li>
       </ul>
-      <span> &copy; 2023 DeathOrDieCompagny. </span>
+      <p className="compagny"> &copy; 2023 DeathOrDieCompagny </p>
     </footer>
   );
 }

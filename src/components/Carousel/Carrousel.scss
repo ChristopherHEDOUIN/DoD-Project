@@ -1,16 +1,18 @@
 .slideshow{
     text-align: center;
-    z-index: -1;
+
 }
 .slide{
     height: 600px;
     border-radius: 10px;
     object-fit: cover;
+    z-index: -1 !important;
 }
 
 @media (max-width: 700px) {
     .slide{
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 
 }

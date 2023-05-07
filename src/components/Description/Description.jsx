@@ -3,6 +3,7 @@ import './Description.scss'
 export default function Description(){
     return(
         <section className='description'>
+            <img src="" alt="" />
             <article className='description__article'>
                 <h3 className="description__title">Darkäsh, ce troll des cavernes.</h3>
                 <h4 className='description__little__title'>Je suis un Death Or Die.</h4>
