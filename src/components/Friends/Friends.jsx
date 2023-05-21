@@ -1,10 +1,10 @@
 import './Friends.scss';
 import Avatar from '@mui/material/Avatar';
-import Cyandre from '../../../public/Cyandre.png'
-import Eiko from '../../../public/Eiko.jpeg'
-import Kryal from '../../../public/Kryal.jpeg'
-import Ouf from '../../../public/Ouf.jpeg'
-import Zolke from '../../../public/Zolke.jpeg'
+import Cyandre from '../../assets/Cyandre.png'
+import Eiko from '../../assets/Eiko.jpeg'
+import Kryal from '../../assets/Kryal.jpeg'
+import Ouf from '../../assets/Ouf.jpeg'
+import Zolke from '../../assets/Zolke.jpeg'
 
 export default function Friends(){
     return(
