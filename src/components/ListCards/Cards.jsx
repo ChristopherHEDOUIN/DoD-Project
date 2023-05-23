@@ -17,8 +17,10 @@ export default function ActionAreaCard({blogData}) {
     <ul className='listCards'>
       {
       blogData.map((data) => (
-        <Card sx={{ maxWidth:500, m:'2rem', mx:'auto' }}>
-          <CardActionArea>
+        <Card
+          sx={{ maxWidth:500, m:'2rem', mx:'auto' 
+        }}>
+          <CardActionArea sx={{"&:hover": {backgroundColor: "transparent"}}}>
             <CardMedia
               key={data.id}
               component="img"
@@ -41,7 +43,7 @@ export default function ActionAreaCard({blogData}) {
                 style={{ 
                   textOverflow: 'ellipsis',
                   overflow: 'hidden',
-                  whiteSpace: 'nowrap'
+                  whiteSpace: 'nowrap',
                 }}>
                 {data.infos}
               </Typography>

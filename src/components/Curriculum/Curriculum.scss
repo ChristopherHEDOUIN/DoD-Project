@@ -1,0 +1,76 @@
+h4, p{
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+.curri_title_img{
+    display: none;
+}
+.curri_profil{
+    flex-direction: column;
+}
+.curri_title, .curri_profil_title{
+    text-transform: uppercase;
+}
+.curri_name{
+    text-align: left;  
+}
+.curri_profil_Infos, .curri_profil_ci{
+    width: 100%;
+}
+.curri_li{
+    list-style-type: none;
+}
+.curri_li:before{
+    content: "- ";
+}
+.curri{
+    margin: 2rem;
+}
+.curri_pro_oclock{
+    background-color: rgba(43, 43, 43, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.curri_title{
+    text-align: right;
+}
+.curri_title_img{
+    left: 0;
+}
+.curri_profil{
+    display: flex;
+}
+.curri_profil_title, .curri_profil_ci, .curri_pro_title, .curri_pro_subtitle{
+    text-align: center;
+}
+
+@media (min-width: 700px){
+    .curri_expro{
+        display: flex;
+    }
+    .curri_title_img{
+        display: block;
+    }
+    .curri_profil_Infos, .curri_profil_ci, .curri_img, .curri_infos{
+        width: 50%;
+    }
+    .curri_title_img{
+        margin: 1rem;
+        width: 90%
+    }
+    .curri_profil{
+        flex-direction: row;
+    }
+    
+}
+
+@media (min-width: 1325px){
+    .curri{
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+
+

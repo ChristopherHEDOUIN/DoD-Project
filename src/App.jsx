@@ -1,7 +1,6 @@
 import Card from './components/ListCards/Card'
 import Cards from './components/ListCards/Cards'
 import Home from './components/Home/Home'
-import Title from './components/Title/Title';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import ScrollButton from './components/ScrollButton/ScrollButton';
@@ -19,7 +18,6 @@ function App() {
 
   return (
     <div className="App">
-      <Title />
       <NavBar categories={categoriesData} />
       
         <Routes>

@@ -2,10 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    min-height: 80vh;
   }
-  
   .form {
     width: 300px;
     display: flex;
@@ -39,6 +37,7 @@
     border-style: solid;
     border-radius: 0px;
     box-shadow: 0px 0px 5px rgb(43, 43, 43);
+    resize: none;
   }
   
   input:focus {
@@ -63,7 +62,9 @@
   }
   
   button:hover {
-    background-color: rgb(43, 43, 43);
+    background-color: #FFDE59;
+    color: rgb(43, 43, 43);
+    font-weight: bold;
   }
   
   button:active {
